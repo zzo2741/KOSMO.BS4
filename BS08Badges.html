@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bs08Badges.html</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h2>벳지</h2>
+
+            <span class="badge badge-primary">Primary</span>
+            <span class="badge badge-pill badge-secondary">Secondary</span>
+            <span class="badge badge-success">Success</span>
+            <span class="badge badge-pill badge-danger">Danger</span>
+            <span class="badge badge-warning">Warning</span>
+            <span class="badge badge-pill badge-info">Info</span>
+            <span class="badge badge-light">Light</span>
+            <span class="badge badge-dark">Dark</span>
+            <br /><br /><br />
+            <div>
+                <h4 class="text-center text-secondary">이정연 팬클럽 게시판</h4>
+            </div>
+
+            <br /><br />
+            <div class="row">
+                <div class="col-3">
+                    <!-- 좌측메뉴영역 -->
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center wa">
+                            전체보기
+                            <span class="badge badge-primary badge-pill badge-warning">12</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center active">
+                            공지사항
+                            <span class="badge badge-primary badge-pill badge-warning">50</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Q&A
+                            <span class="badge badge-primary badge-pill badge-warning">99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <!-- 우측메뉴영역 -->
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr class="text-center">
+                                <th>NO</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <td>100</td>
+                                <td class="text-left"><span class="badge badge-secondary">공지사항</span>정연누나는 왤캐 이뻐요? <span class="badge badge-danger">NEW</span></td>
+                                <td>이준승</td>
+                                <td>12</td>
+                            </tr>
+                            <tr class="text-center">
+                                <td>99</td>
+                                <td class="text-left"><span class="badge badge-secondary">공지사항</span> 2020년 4월 24일 팬미팅합니다.</td>
+                                <td>이정연</td>
+                                <td>19</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 
+                    게시판에서 페이지번호를 표시할 때 pagination클래스를 사용한다.
+                    disavled 클래스 : 해당 페이지 번호가 비활성화 된다. 오버시 효과없음.
+                    active 클래스 : 해당 페이지를 다른 색으로 표현한다.
+                 -->
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">이전블럭</a></li>
+                <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item active"><a class="page-link" href="javascript:void(0);">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">다음블럭</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

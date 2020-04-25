@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bs02GridSystem.html</title>
+        <link rel="stylesheet" href="./bootstrap4.4.1/css/bootstrap.css" />
+        <script src="./bootstrap4.4.1/js/bootstrap.js"></script>
+        <script src="./bootstrap4.4.1/jquery/jquery-3.5.0.js"></script>
+        <style>
+            div {
+                border: 1px solid red;
+                text-align: center;
+            }
+            .box1 {
+                border: 1px solid black;
+                background-color: red;
+            }
+            .box2 {
+                border: 1px solid black;
+                background-color: green;
+            }
+            .box3 {
+                border: 1px solid black;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h4>Grid System 사용하기</h4>
+            <!-- 
+                부트스트랩의 그리드 시스템
+                    : 페이지의 가로폭을 12개의 컬럼으로 나눌 수 있는 기능을 제공한다.
+                      개발자가 원하는대로 레이아웃을 편하게 구성할 수 있다. float, clear속성을 사용할 필요가 없다.
+                사용법
+                    : col-디바이스클래스명-컬럼크기
+                    sm : 모바일폰
+                    md : 태블릿
+                    lg : 소형랩탑컴퓨터
+                    xl : 일반적인 랩탑이나 데스크탑
+                하나의 레이어를 작성할 때는 row클래스를 사용한다.
+             -->
+            <h5>가로를 균등하게 나눌때</h5>
+            <div class="row">
+                <div class="col">영역1</div>
+                <div class="col">영역2</div>
+                <div class="col">영역3</div>
+            </div>
+
+            <h5>디바이스별 class속성 확인</h5>
+            <div class="row">
+                <div class="col-sm-4 box1">sm</div>
+                <div class="col-sm-4 box2">sm</div>
+                <div class="col-sm-4 box3">sm</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 box1">md</div>
+                <div class="col-md-4 box2">md</div>
+                <div class="col-md-4 box3">md</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 box1">lg</div>
+                <div class="col-lg-4 box2">lg</div>
+                <div class="col-lg-4 box3">lg</div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 box1">xl</div>
+                <div class="col-xl-4 box2">xl</div>
+                <div class="col-xl-4 box3">xl</div>
+            </div>
+
+            <h4>레이아웃 작성하기</h4>
+            <p>
+                CSS에서 반응형웹 예제와 동일한 레이아웃을 작성한다.
+            </p>
+            <!-- 
+                bootstrap에서 제공하는 row클래스는 레이아웃을 설정하기 위한 것이므로 정렬은 기본적으로 left가 적용되고,
+                레이어의 배치는 가로형이 된다. 따라서 가운데 정렬을 위해서는 추가적인 div레이어가 필요하다.
+             -->
+
+            <div class="col-12">
+                <div>Header영역</div>
+            </div>
+
+            <div class="row">
+                <div class="col-3">메뉴1</div>
+                <div class="col-3">메뉴2</div>
+                <div class="col-3">메뉴3</div>
+                <div class="col-3">메뉴4</div>
+            </div>
+            <div class="row" style="height: 400px;">
+                <div class="col-4">좌측영역</div>
+                <div class="col-8">컨텐츠영역</div>
+            </div>
+
+            <div class="row">
+                Bottom영역
+            </div>
+        </div>
+    </body>
+</html>

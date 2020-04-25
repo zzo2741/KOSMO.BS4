@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BS07Buttons.html</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <div class="container-fluid">
+            <h3>버튼(button)</h3>
+
+            <h4>기본스타일</h4>
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+            <input type="button" value="input버튼" class="btn btn-dark" />
+
+            <h4>Spinner적용된 버튼 - Loading...!</h4>
+            <button class="btn btn-success">
+                <span class="spinner-border spinner-border-sm"></span>
+            </button>
+
+            <button class="btn btn-primary">
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..활성화버튼
+            </button>
+
+            <button class="btn btn-info" disabled>
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading..비활성화버튼
+            </button>
+
+            <button class="btn btn-dark" disabled>
+                <span class="spinner-grow spinner-grow-sm"></span>
+                결재진행중
+            </button>
+
+            <h4>그룹화된 버튼 - 가로형</h4>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">회사소개</button>
+                <button type="button" class="btn btn-primary">제품소개</button>
+                <button type="button" class="btn btn-primary">고객센터</button>
+            </div>
+
+            <h4>그룹화된 버튼 - 세로형</h4>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-info">회사소개</button>
+                <button type="button" class="btn btn-info">제품소개</button>
+                <button type="button" class="btn btn-info">고객센터</button>
+            </div>
+
+            <h4>버튼 + 드롭다운 메뉴</h4>
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-primary">회원가입</button>
+                <button type="button" class="btn btn-outline-primary">로그인</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
+                        고객센터
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">자주 묻는 질문</a>
+                        <a class="dropdown-item" href="#">문의하기</a>
+                    </div>
+                </div>
+            </div>
+
+            <h4>버튼 + 드롭다운 메뉴 + block</h4>
+            <div class="btn-group btn-block">
+                <button type="button" class="btn btn-outline-primary">회원가입</button>
+                <button type="button" class="btn btn-outline-primary">로그인</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown">
+                        고객센터
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">자주 묻는 질문</a>
+                        <a class="dropdown-item" href="#">문의하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

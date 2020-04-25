@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- 
+            뷰포트(viewport)
+            width=device-width : 단말기(모바일장치)의 화면폭에 따라 페이지의
+                가로폭을 재설정하게 해준다. 디바이스에 따라 스케일이 달라지게 
+                되는데 이를 100%스케일에서 CSS픽셀들로 계산된 화면의 폭을
+                의미한다.
+            initial-scale=1.0 : 페이지가 처음 브라우저에 로딩된 초기 줌 레벨을 지정한다.
+                즉 초기확대값을 설정하게 된다.
+         -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bs01GetStarted.html</title>
+        <link rel="stylesheet" href="./bootstrap4.4.1/css/bootstrap.css" />
+        <script src="./bootstrap4.4.1/js/bootstrap.js"></script>
+        <script src="./bootstrap4.4.1/jquery/jquery-3.5.0.js"></script>
+        <style>
+            div {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 해당 클래스는 반응형 변동폭 컨테이너를 제공한다. -->
+        <div class="container">
+            <h1>처음 만들어보는 BootStrap Page</h1>
+            <p>
+                나는 변동폭 컨테이너로 좌우측에 약간의 공백있음
+            </p>
+        </div>
+        <!-- 해당클래스는 뷰포트의 전체폭에 펼쳐진 전체폭 컨테이너를 제공한다. -->
+        <div class="container-fluid">
+            <h2>container-fluid</h2>
+            <p>
+                나는 고정폭 컨테이너. 좌우측 공백없이 화면에 꽉채움
+            </p>
+        </div>
+    </body>
+</html>

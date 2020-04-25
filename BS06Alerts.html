@@ -1,0 +1,47 @@
+!<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BS06Alerts.html</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    </head>
+    <body>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <div class="container-fluid">
+            <h2>Alerts</h2>
+
+            <h4>기본 Alerts - 닫기 기능 없음</h4>
+            <div class="alert alert-success"><strong>Success!</strong> Indicates a successful or positive action.</div>
+
+            <h4>Alerts - 링크추가</h4>
+            <div class="alert alert-danger"><strong>Danger!</strong> You should <a href="#" class="alert-link">나는 링크</a></div>
+
+            <h4>닫기 기능 추가 애니메이션 효과 없음</h4>
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong> Indicates a successful or positive action.
+            </div>
+
+            <h4>닫기기능추가 - 애니메이션 없음</h4>
+            <div class="alert alert-info alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert"><small>닫기</small></button>
+                <strong>info!</strong> Indicates a successful or positive action.
+            </div>
+
+            <h4>닫기 + 애니메이션 있음</h4>
+            <div class="alert alert-primary alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Primary!</strong> Indicates an important action.
+            </div>
+        </div>
+    </body>
+</html>

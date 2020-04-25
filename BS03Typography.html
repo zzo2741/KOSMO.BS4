@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bs03Typography.html</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <style>
+        div {
+            border: 10px solid blue;
+        }
+        p {
+            border: 1px dotted green;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h4>Typography(텍스트 효과)</h4>
+
+            <h5>Display Headings</h5>
+            <h1 class="display-1">display-1</h1>
+            <h2 class="display-2">display-2</h2>
+            <h3 class="display-3">display-3 <small>small로 만드는 소제목1</small></h3>
+            <h4 class="display-4">display-4 <small>small로 만드는 소제목2</small></h4>
+            <br />
+            <h2>Headline <small>H2의 small</small></h2>
+            <h3>Headline <small>H3의 small</small></h3>
+            <h4>Headline <small>H4의 small</small></h4>
+            <br />
+            <h1>Highlight Text</h1>
+            <p>Use the mark element to <mark>highlight</mark> text.</p>
+            <br />
+            <h1>Abbreviations</h1>
+            <p>마우스 오버시 커서는 물음표로 표시되고 풍선도움말이 표시됨</p>
+            <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+            <br />
+            <h1>Description Lists</h1>
+            <p>사전과 같은 목록효과를 사용할때 적용</p>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+            </dl>
+            <h1>Keyboard Inputs</h1>
+            <p>문자열을 키보드와 같이 표현함. 단축키 표현에 유용함.</p>
+            <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+            <h1>Multiple Code Lines</h1>
+            <p>Pre태그는 Text를 편집한 그대로 브라우저에 출력된다.</p>
+            <pre>
+  Text in a pre element
+is displayed in a fixed-width
+font, and it preserves          탭삽입함
+both      spaces(스페이스) and
+line breaks.
+            </pre>
+
+            <h2>Typography 정렬하기</h2>
+            <p class="text-left">Left-aligned text.</p>
+            <p class="text-right">Right-aligned text.</p>
+            <p class="text-center">Center-aligned text.</p>
+            <p class="text-justify">
+                Justified text. Justified text. Justified text. Justified text. Justified text. Justified text. Justified text. Justified text.
+                Justified text. Justified text. Justified text. Justified text.
+            </p>
+            <p class="text-nowrap">No wrap text. No wrap text. No wrap text. No wrap text.</p>
+            <p><strong>Tip:</strong> Try to resize the browser window to see the behaviour of justify and nowrap.</p>
+        </div>
+    </body>
+</html>
